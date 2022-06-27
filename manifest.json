@@ -1,0 +1,23 @@
+{
+    "name": "VIU TV AD-BLOCKER",
+    "version": "1.0",
+    "description": "Blocks viu tv ads",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
+    ],
+    "declarative_net_request" : {
+        "rule_resources" : [{
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules_1.json"
+        }]
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "48": "./viuTvIcon.png"
+    },
+    "manifest_version": 3
+}
